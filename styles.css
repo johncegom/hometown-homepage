@@ -1,0 +1,148 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Sono", monospace;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/torshov.jpg");
+  background-size: cover;
+  height: 95vh;
+  color: #444d45;
+}
+
+.hero__title {
+  padding: 0.25em 0.75em;
+  border-radius: 10px;
+  text-shadow: 0 0 5px white;
+}
+
+.hero__description {
+  margin-top: 0.75em;
+  border-radius: 10px;
+  padding: 0.25em 1em;
+  text-shadow: 0 0 5px white;
+}
+
+.activities {
+  color: #ebe8eb;
+  background-color: #9d7350;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 0;
+}
+
+.activities__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities__title {
+  font-size: 30px;
+  margin: 0 1em 1.5em;
+}
+
+.content__box + .content__box {
+  margin-top: 4.5em;
+}
+
+.content__box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__box img {
+  border-radius: 10%;
+}
+
+.content__box img:hover {
+  width: 400px;
+}
+
+.box__title {
+  margin: 1.25em 0;
+}
+
+.guide {
+  color: #9d7350;
+  padding: 1.5em;
+  width: 80%;
+  margin: 2em auto;
+  background-color: #ebe8eb;
+  border-radius: 10px;
+  box-shadow: 10px 5px;
+}
+
+.guide__title {
+  margin-bottom: 1em;
+}
+
+.guide__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.guide__person {
+  width: 40%;
+}
+
+.guide__img {
+  width: 40%;
+}
+
+.guide__img img {
+  border-radius: 10px;
+}
+
+.person__name {
+  margin-top: 1em;
+}
+
+@media (min-width: 800px) {
+  .activities__content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .content__box {
+    width: 20%;
+  }
+
+  .content__box + .content__box {
+    margin-top: 0;
+  }
+
+  .guide {
+    width: 50%;
+  }
+}
